@@ -1,0 +1,50 @@
+section.projects
+	background:
+		color: $bg-blue
+		image: url(../img/bg-projects.jpg)
+		position: center bottom
+		size: contain
+
+	h2
+		color: $white
+		font:
+			size: 60px
+			weight: 400
+		line-height: 1
+		text-align: center
+		margin: 0 0 20px
+
+	h3
+		color: $white
+		font-size: 28px
+		//font-style: italic
+		text-align: center
+		margin: 0 0 50px
+
+	p
+		color: $white
+
+	.container
+		+outer-container(520px)
+
+		li
+			+span-columns(2)
+			+omega(2n)
+			min-width: 250px
+			max-width: 250px
+			margin-bottom: 15px
+
+			&:last-child
+				margin-bottom: 0
+
+		@media (max-width: 550px)
+
+			li
+				+span-columns(2)
+				+omega(1n)
+
+			.project-group
+				display: block
+				width: 250px
+				margin-left: auto
+				margin-right: auto

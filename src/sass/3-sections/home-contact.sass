@@ -1,0 +1,29 @@
+footer.contact
+	color: $white
+
+	a
+		color: $white
+		font-size: 60px
+		text-align: center
+		line-height: 6
+		width: 100%
+		display: block
+		background:
+			color: $bg-pink
+			image: url(../img/bg-contact.svg)
+			position: center bottom
+			repeat: no-repeat
+			size: contain
+		transition: background 150ms ease-in-out
+
+		&:hover
+			background:
+				color: darken($bg-pink, 5%)
+
+	@media (max-width: 775px)
+		a
+			font-size: 50px
+
+	@media (max-width: 520px)
+		a
+			font-size: 35px

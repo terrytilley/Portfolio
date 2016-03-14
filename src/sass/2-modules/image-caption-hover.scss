@@ -1,0 +1,75 @@
+.caption-style{
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.caption-style li{
+  float: left;
+  padding: 0px;
+  position: relative;
+  overflow: hidden;
+}
+
+.caption-style li:hover .caption{
+  opacity: 1;
+}
+
+.caption-style li:hover img{
+  opacity: 1;
+  transform: scale(1.15,1.15);
+  -webkit-transform:scale(1.15,1.15);
+  -moz-transform:scale(1.15,1.15);
+  -ms-transform:scale(1.15,1.15);
+  -o-transform:scale(1.15,1.15);
+}
+
+
+.caption-style img{
+  margin: 0px;
+  padding: 0px;
+  float: left;
+  z-index: 4;
+}
+
+
+.caption-style .caption{
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition:all 0.45s ease-in-out;
+  -moz-transition:all 0.45s ease-in-out;
+  -o-transition:all 0.45s ease-in-out;
+  -ms-transition:all 0.45s ease-in-out;
+  transition:all 0.45s ease-in-out;
+}
+
+.caption-style img{
+  -webkit-transition:all 0.25s ease-in-out;
+  -moz-transition:all 0.25s ease-in-out;
+  -o-transition:all 0.25s ease-in-out;
+  -ms-transition:all 0.25s ease-in-out;
+  transition:all 0.25s ease-in-out;
+}
+.caption-style .blur{
+  background-color: rgba(0,0,0,0.8);
+  width: 250px;
+  height: 300px;
+  z-index: 5;
+  position: absolute;
+}
+
+.caption-style .caption-text h4{
+  font-size: 22px;
+  margin-bottom: 0;
+}
+.caption-style .caption-text{
+  z-index: 10;
+  color: #fff;
+  position: absolute;
+  min-width: 250px;
+  height: 300px;
+  text-align: center;
+  top:25px;
+  left: 0
+}

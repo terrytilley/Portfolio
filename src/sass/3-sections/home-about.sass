@@ -1,0 +1,31 @@
+section.about
+	background:
+		color: $bg-green
+		image: url(../img/bg-about.jpg)
+		position: center bottom
+		size: cover
+
+	h2
+		color: $white
+		font:
+			size: 60px
+			weight: 400
+		line-height: 1
+		margin-left: -70px
+		margin-top: 0
+
+		.home-lead
+			color: $white
+			margin-top: 50px
+			margin-left: 90px
+
+@media (max-width: 640px)
+	section.about
+		h2
+			font-size: 42px
+			text-align: center
+		h2, .home-lead
+			margin-left: auto !important
+			margin-right: auto
+			padding-bottom: 0 !important
+			max-width: 300px
